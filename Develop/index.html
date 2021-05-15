@@ -29,8 +29,8 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-
-      <div class="container">
+ <!-- Timeblocks go here -->
+      <div class="row">
         <div class="hour time-block">
           <p>9am</p>
         </div>
@@ -39,7 +39,16 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- Timeblocks go here -->
+     
+      <div class="row">
+        <div class="hour time-block">
+          <p>10am</p>
+        </div>
+        <input data-hour="10" type="text"></input>
+        <button class="saveBtn" data-value="10" type="button">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
