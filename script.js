@@ -155,6 +155,22 @@ function elevenAM() {
     }
 }
 
+function twelvePM() {
+    let input_textarea4 = document.querySelector("#comment12pm");
+    let output_div4 = document.querySelector("#comment12pm");
+    let save_button4 = document.querySelector("#button12pm");
+
+    save_button4.addEventListener("click", updateOutput4);
+
+    output_div4.textContent = localStorage.getItem("content4");
+    input_textarea4.value = localStorage.getItem("content4");
+
+    function updateOutput4() {
+        localStorage.setItem("content4", input_textarea4.value);
+
+        output_div4.textContent = input_textarea4.value;
+    }
+}
 
 
 
