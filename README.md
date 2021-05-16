@@ -8,11 +8,11 @@ When thinking about my motivation for this assignment many things come to mind. 
 
 # Built With
 
-*HTML
-*CSS
-*Javascript
-*jQuery
-*Luxon
+..*HTML
+..*CSS
+..*Javascript
+..*jQuery
+..*Luxon
 
 ## License
 
