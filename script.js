@@ -54,13 +54,47 @@ function clockRefresh() {
             $("#comment11am").addClass("future");
         }
         if (now > 12) {
-            $("#comment11am").addClass("past");
+            $("#comment12pm").addClass("past");
         } else if (now >= 12 && now < 13) {
-            $("#comment11am").addClass("present");
+            $("#comment12pm").addClass("present");
         } else if (now < 12) {
-            $("#comment11am").addClass("future");
+            $("#comment12pm").addClass("future");
         }
-
+        if (now > 13) {
+            $("#comment1pm").addClass("past");
+        } else if (now >= 13 && now < 14) {
+            $("#comment1pm").addClass("present");
+        } else if (now < 13) {
+            $("#comment1pm").addClass("future");
+        }
+        if (now > 14) {
+            $("#comment2pm").addClass("past");
+        } else if (now >= 14 && now < 15) {
+            $("#comment2pm").addClass("present");
+        } else if (now < 14) {
+            $("#comment2pm").addClass("future");
+        }
+        if (now > 15) {
+            $("#comment3pm").addClass("past");
+        } else if (now >= 15 && now < 16) {
+            $("#comment3pm").addClass("present");
+        } else if (now < 15) {
+            $("#comment3pm").addClass("future");
+        }
+        if (now > 16) {
+            $("#comment4pm").addClass("past");
+        } else if (now >= 16 && now < 17) {
+            $("#comment4pm").addClass("present");
+        } else if (now < 16) {
+            $("#comment4pm").addClass("future");
+        }
+        if (now > 17) {
+            $("#comment5pm").addClass("past");
+        } else if (now >= 17 && now < 18) {
+            $("#comment5pm").addClass("present");
+        } else if (now < 17) {
+            $("#comment5pm").addClass("future");
+        }
     }
  
     // WHEN I click into a timeblock
