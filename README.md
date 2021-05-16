@@ -6,6 +6,14 @@ When thinking about my motivation for this assignment many things come to mind. 
 [Live Link](https://sarsieg.github.io/Work-Day-Scheduler/)
 ![Screenshot]
 
+# Built With
+
+*HTML
+*CSS
+*Javascript
+*jQuery
+*Luxon
+
 ## License
 
 MIT License
