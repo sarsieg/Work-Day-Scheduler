@@ -200,7 +200,7 @@ function twoPM() {
     input_textarea6.value = localStorage.getItem("content6");
 
     function updateOutput6() {
-        localStorage6.setItem("content", input_textarea6.value);
+        localStorage.setItem("content", input_textarea6.value);
 
         output_div6.textContent = input_textarea6.value;
     }
@@ -217,7 +217,7 @@ function threePM() {
     input_textarea7.value = localStorage.getItem("content7");
 
     function updateOutput7() {
-        localStorage7.setItem("content", input_textarea7.value);
+        localStorage.setItem("content", input_textarea7.value);
 
         output_div7.textContent = input_textarea7.value;
     }
@@ -234,7 +234,7 @@ function fourPM() {
     input_textarea8.value = localStorage.getItem("content8");
 
     function updateOutput8() {
-        localStorage8.setItem("content", input_textarea8.value);
+        localStorage.setItem("content", input_textarea8.value);
 
         output_div8.textContent = input_textarea8.value;
     }
@@ -251,7 +251,7 @@ function fivePM() {
     input_textarea9.value = localStorage.getItem("content9");
 
     function updateOutput9() {
-        localStorage9.setItem("content", input_textarea9.value);
+        localStorage.setItem("content", input_textarea9.value);
 
         output_div9.textContent = input_textarea9.value;
     }
