@@ -120,7 +120,44 @@ function nineAM() {
         output_div.textContent = input_textarea.value;
     }
 }
+
+function tenAM() {
+    let input_textarea2 = document.querySelector("#comment10am");
+    let output_div2 = document.querySelector("#comment10am");
+    let save_button2 = document.querySelector("#button10am");
+
+    save_button2.addEventListener("click", updateOutput2);
+
+    output_div2.textContent = localStorage.getItem("content2");
+    input_textarea2.value = localStorage.getItem("content2");
+
+    function updateOutput2() {
+        localStorage.setItem("content", input_textarea2.value);
+
+        output_div2.textContent = input_textarea2.value;
+    }
+}
     
+function elevenAM() {
+    let input_textarea3 = document.querySelector("#comment11am");
+    let output_div3 = document.querySelector("#comment11am");
+    let save_button3 = document.querySelector("#button11am");
+
+    save_button3.addEventListener("click", updateOutput3);
+
+    output_div3.textContent = localStorage.getItem("content3");
+    input_textarea3.value = localStorage.getItem("content3");
+
+    function updateOutput3() {
+        localStorage.setItem("content3", input_textarea3.value);
+
+        output_div3.textContent = input_textarea3.value;
+    }
+}
+
+
+
+
 $("#clearSchedule").click(function() {
     localStorage.clear();
     window.location.assign("./index.html");
