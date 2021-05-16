@@ -1,4 +1,4 @@
-# Work-Day-Scheduler
+# Work Day Scheduler
 When thinking about my motivation for this assignment many things come to mind. As someone who is very busy and has a lot of activities/events in my scedule every week the use and importance of a schedule is very apparent. Not only for myself but so many others, schedules are used everyday to keep your life on track and make sure you don't miss anything on your "list of things to do". I built this project to showcase the power of HTML, CSS, Javascript and Third-Party APIs such as jQuery, and Luxon. These elements together were helped to create a daily planner for important events to users can manage their time effectively and efficiently. This solves problems such as not having a calender for your important events and not having a successful way to save these events into a local storage, but with the power of the elements listed above, those things are made possible on this page. I learned the affect that HTML, CSS, Javascript and Third-Party APIs have when used together and the amazing things you can create with them. 
 
 # Website
@@ -15,7 +15,7 @@ When thinking about my motivation for this assignment many things come to mind. 
 * jQuery
 * Luxon
 
-## License
+# License
 
 MIT License
 
