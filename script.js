@@ -97,12 +97,12 @@ function colorCode() {
     }
 }
 
-// WHEN I click into a timeblock
-// THEN I can enter an event
-// WHEN I click the save button for that timeblock
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
+// When I click into a timeblock
+// Then I can enter an event
+// When I click the save button for that timeblock
+// Then the text for that event is saved in local storage
+// When I refresh the page
+// Then the saved events persist
 
 function nineAM() {
     let input_textarea = document.querySelector("#comment9am");
@@ -258,6 +258,8 @@ function fivePM() {
         output_div9.textContent = input_textarea9.value;
     }
 }
+
+// Added click function to clear scedule from local storage
 
 $("#clearSchedule").click(function () {
     localStorage.clear();
