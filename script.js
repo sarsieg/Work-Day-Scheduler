@@ -1,18 +1,3 @@
-window.onload = function(){
-    colorCode();
-    nineAM();
-    tenAM();
-    elevenAM();
-    twelvePM();
-    onePM();
-    twoPM();
-    threePM();
-    fourPM();
-    fivePM();
-}
-
-// When I open the planner
-// Then the current day and time is displayed at the top of the calender
 
 
 function clockRefresh() {
@@ -23,6 +8,9 @@ function clockRefresh() {
     
     
     let time = setInterval(clockRefresh, 1000);
+
+   
+    
 
    
 
