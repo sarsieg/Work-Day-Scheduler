@@ -11,7 +11,8 @@ window.onload = function(){
     fivePM();
 }
 
-
+// When I open the planner
+// Then the current day and time is displayed at the top of the calender
 
 
 function clockRefresh() {
