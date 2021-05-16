@@ -4,8 +4,8 @@ When thinking about my motivation for this assignment many things come to mind. 
 # Website
 
 [Live Link](https://sarsieg.github.io/Work-Day-Scheduler/)
-![Screenshot](/assets/images/screenshot14.png/)
-![Screenshot](/assets/images/screenshot15.png/)
+![Screenshot](/assets/images/Screenshot14.png/)
+![Screenshot](/assets/images/Screenshot15.png/)
 
 # Built With
 
