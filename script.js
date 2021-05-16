@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
     colorCode();
     nineAM();
     tenAM();
@@ -19,85 +19,85 @@ function clockRefresh() {
     let clock = document.getElementById("currentDay");
     let DateTime = luxon.DateTime;
     clock.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+}
+
+
+let time = setInterval(clockRefresh, 1000);
+
+// When I scroll down
+// Then I am presented with timeblocks for standard business hours
+// When I view the timeblocks for that day
+// Then each timeblock is color coded to indicate whether it is in the past (gray), present (red), or future (green)
+
+let now = new Date().getHours();
+
+function colorCode() {
+    if (now > 9) {
+        $("#comment9am").addClass("past");
+    } else if (now >= 9 && now < 10) {
+        $("#comment9am").addClass("present");
+    } else if (now < 9) {
+        $("#comment9am").addClass("future");
     }
-    
-    
-    let time = setInterval(clockRefresh, 1000);
-
-    // When I scroll down
-    // Then I am presented with timeblocks for standard business hours
-    // When I view the timeblocks for that day
-    // Then each timeblock is color coded to indicate whether it is in the past (gray), present (red), or future (green)
-
-    let now = new Date().getHours();
-
-    function colorCode() {
-        if (now > 9) {
-            $("#comment9am").addClass("past");
-        } else if (now >= 9 && now < 10) {
-            $("#comment9am").addClass("present");
-        } else if (now < 9) {
-            $("#comment9am").addClass("future");
-        }
-        if (now > 10) {
-            $("#comment10am").addClass("past");
-        } else if (now >= 10 && now < 11) {
-            $("#comment10am").addClass("present");
-        } else if (now < 10) {
-            $("#comment10am").addClass("future");
-        }
-        if (now > 11) {
-            $("#comment11am").addClass("past");
-        } else if (now >= 11 && now < 12) {
-            $("#comment11am").addClass("present");
-        } else if (now < 11) {
-            $("#comment11am").addClass("future");
-        }
-        if (now > 12) {
-            $("#comment12pm").addClass("past");
-        } else if (now >= 12 && now < 13) {
-            $("#comment12pm").addClass("present");
-        } else if (now < 12) {
-            $("#comment12pm").addClass("future");
-        }
-        if (now > 13) {
-            $("#comment1pm").addClass("past");
-        } else if (now >= 13 && now < 14) {
-            $("#comment1pm").addClass("present");
-        } else if (now < 13) {
-            $("#comment1pm").addClass("future");
-        }
-        if (now > 14) {
-            $("#comment2pm").addClass("past");
-        } else if (now >= 14 && now < 15) {
-            $("#comment2pm").addClass("present");
-        } else if (now < 14) {
-            $("#comment2pm").addClass("future");
-        }
-        if (now > 15) {
-            $("#comment3pm").addClass("past");
-        } else if (now >= 15 && now < 16) {
-            $("#comment3pm").addClass("present");
-        } else if (now < 15) {
-            $("#comment3pm").addClass("future");
-        }
-        if (now > 16) {
-            $("#comment4pm").addClass("past");
-        } else if (now >= 16 && now < 17) {
-            $("#comment4pm").addClass("present");
-        } else if (now < 16) {
-            $("#comment4pm").addClass("future");
-        }
-        if (now > 17) {
-            $("#comment5pm").addClass("past");
-        } else if (now >= 17 && now < 18) {
-            $("#comment5pm").addClass("present");
-        } else if (now < 17) {
-            $("#comment5pm").addClass("future");
-        }
+    if (now > 10) {
+        $("#comment10am").addClass("past");
+    } else if (now >= 10 && now < 11) {
+        $("#comment10am").addClass("present");
+    } else if (now < 10) {
+        $("#comment10am").addClass("future");
     }
- 
-    // WHEN I click into a timeblock
+    if (now > 11) {
+        $("#comment11am").addClass("past");
+    } else if (now >= 11 && now < 12) {
+        $("#comment11am").addClass("present");
+    } else if (now < 11) {
+        $("#comment11am").addClass("future");
+    }
+    if (now > 12) {
+        $("#comment12pm").addClass("past");
+    } else if (now >= 12 && now < 13) {
+        $("#comment12pm").addClass("present");
+    } else if (now < 12) {
+        $("#comment12pm").addClass("future");
+    }
+    if (now > 13) {
+        $("#comment1pm").addClass("past");
+    } else if (now >= 13 && now < 14) {
+        $("#comment1pm").addClass("present");
+    } else if (now < 13) {
+        $("#comment1pm").addClass("future");
+    }
+    if (now > 14) {
+        $("#comment2pm").addClass("past");
+    } else if (now >= 14 && now < 15) {
+        $("#comment2pm").addClass("present");
+    } else if (now < 14) {
+        $("#comment2pm").addClass("future");
+    }
+    if (now > 15) {
+        $("#comment3pm").addClass("past");
+    } else if (now >= 15 && now < 16) {
+        $("#comment3pm").addClass("present");
+    } else if (now < 15) {
+        $("#comment3pm").addClass("future");
+    }
+    if (now > 16) {
+        $("#comment4pm").addClass("past");
+    } else if (now >= 16 && now < 17) {
+        $("#comment4pm").addClass("present");
+    } else if (now < 16) {
+        $("#comment4pm").addClass("future");
+    }
+    if (now > 17) {
+        $("#comment5pm").addClass("past");
+    } else if (now >= 17 && now < 18) {
+        $("#comment5pm").addClass("present");
+    } else if (now < 17) {
+        $("#comment5pm").addClass("future");
+    }
+}
+
+// WHEN I click into a timeblock
 // THEN I can enter an event
 // WHEN I click the save button for that timeblock
 // THEN the text for that event is saved in local storage
@@ -139,7 +139,7 @@ function tenAM() {
 }
 
 
-    
+
 function elevenAM() {
     let input_textarea3 = document.querySelector("#comment11am");
     let output_div3 = document.querySelector("#comment11am");
@@ -259,9 +259,9 @@ function fivePM() {
     }
 }
 
-$("#clearSchedule").click(function() {
+$("#clearSchedule").click(function () {
     localStorage.clear();
     window.location.assign("./index.html");
 });
 
-   
+
