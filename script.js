@@ -132,7 +132,7 @@ function tenAM() {
     input_textarea2.value = localStorage.getItem("content2");
 
     function updateOutput2() {
-        localStorage.setItem("content", input_textarea2.value);
+        localStorage.setItem("content2", input_textarea2.value);
 
         output_div2.textContent = input_textarea2.value;
     }
