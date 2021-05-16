@@ -128,7 +128,7 @@ function tenAM() {
 
     save_button2.addEventListener("click", updateOutput2);
 
-    output_div2.textContent = localStorage.getItem("content2");
+    output_div2.textContent = localStorage.getItem("conten2t");
     input_textarea2.value = localStorage.getItem("content2");
 
     function updateOutput2() {
@@ -137,6 +137,8 @@ function tenAM() {
         output_div2.textContent = input_textarea2.value;
     }
 }
+
+
     
 function elevenAM() {
     let input_textarea3 = document.querySelector("#comment11am");
